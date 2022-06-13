@@ -16,8 +16,8 @@ module.exports = app => {
 
 #### server.js:
 ```
-const express = require('express')
-const db = require('./app/models/index')
+const express = require('express');
+const db = require('./app/models/index');
 
 const app = express();
 
@@ -49,8 +49,8 @@ export function initRoute(app) {
 
 #### server.js:
 ```
-import express from 'express'
-import db from './app/models/index'
+import express from 'express';
+import db from './app/models/index';
 import initRoute from './app/routes/index.routes';
 
 const app = express();
