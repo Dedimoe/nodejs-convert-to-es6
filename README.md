@@ -16,8 +16,8 @@ module.exports = app => {
 
 server.js:
 ```
-import express from 'express'
-import db from './app/models/index'
+const express = require('express')
+const db = require('./app/models/index')
 
 const app = express();
 
@@ -37,7 +37,7 @@ app.listen(PORT, () => {
 index.routes.js:
 ```
 import express from 'express';
-import student from '../controllers/student-controller.js';
+import student from '../controllers/student.controller.js';
 
 export function initRoute(app) {
     // create a new student
