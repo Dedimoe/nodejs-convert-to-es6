@@ -1,9 +1,9 @@
 # nodejs-convert-to-es6
 nodejs convert to es6
 
-### 1. Before
+## 1. Before
 
-index.routes.js:
+#### index.routes.js:
 ```
 module.exports = app => {
     const student = require('../controllers/student.controller.js');
@@ -14,7 +14,7 @@ module.exports = app => {
   };
 ```
 
-server.js:
+#### server.js:
 ```
 const express = require('express')
 const db = require('./app/models/index')
@@ -32,9 +32,9 @@ app.listen(PORT, () => {
 ```
 
 
-### 2. After convert to ES6
+## 2. After convert to ES6
 
-index.routes.js:
+#### index.routes.js:
 ```
 import express from 'express';
 import student from '../controllers/student.controller.js';
@@ -47,7 +47,7 @@ export function initRoute(app) {
 }
 ```
 
-server.js:
+#### server.js:
 ```
 import express from 'express'
 import db from './app/models/index'
